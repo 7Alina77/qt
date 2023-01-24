@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <title>QTService</title>
 </head>
 <body>
@@ -12,10 +13,10 @@
     <header class="header">
       <img class="header__logo" src="/images/qt_logo.jpg" alt="лого">
       <ul class="header__nav">
-        <li class="header__item"><a class="link header__link" href="#">Техника Apple</a></li>
-        <li class="header__item"><a class="link header__link" href="#">Аксессуары</a></li>
-        <li class="header__item"><a class="link header__link" href="#">Другие фирмы</a></li>
-        <li class="header__item"><a class="link header__link" href="#">Ремонт</a></li>
+        <li class="header__item"><p class="link header__link" id="apple">Техника Apple</p></li>
+        <li class="header__item"><p class="link header__link" id="accessories" href="#">Аксессуары</p></li>
+        <li class="header__item"><p class="link header__link" id="other" href="#">Другие фирмы</p></li>
+        <li class="header__item"><p class="link header__link" id="repair" href="#">Ремонт</p></li>
       </ul>
     </header>
     <main>
@@ -86,7 +87,17 @@
             <li class="accessories__list">Чехлы для AirPods</li>
             <li class="accessories__list">Оригинальные кабели зарядки</li>
           </ul>
-          <img src="./images/accessories.jpg" alt="accessories" class="accessories__img">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/accessories.png" alt="accessories" class="accessories__img"></div>
+              <div class="swiper-slide"><img src="./images/ремешки.png" alt="accessories" class="accessories__img"></div>
+              <div class="swiper-slide"><img src="./images/stilus_apple_pencil.png" alt="accessories" class="accessories__img"></div>
+              <div class="swiper-slide"><img src="./images/airpods_pro 2.png" alt="accessories" class="accessories__img"></div>
+              <div class="swiper-slide"><img src="./images/steklo.png" alt="accessories" class="accessories__img"></div>
+              <div class="swiper-slide"><img src="./images/кабель.png" alt="accessories" class="accessories__img"></div>
+              <div class="swiper-slide"><img src="./images/ремешок2.png" alt="accessories" class="accessories__img"></div>
+              <div class="swiper-slide"><img src="./images/chehol.png" alt="accessories" class="accessories__img"></div>
+            </div>
         </div>
       </section>
       <div class="map">
@@ -112,5 +123,7 @@
       <p class="footer__copyright">&#169; QTService</p>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
