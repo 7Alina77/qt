@@ -20,8 +20,8 @@
 }
 
 .header__logo {
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   justify-content: flex-start;
   border-radius: 30%;
 }
